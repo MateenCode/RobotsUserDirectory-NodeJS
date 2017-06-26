@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+
+    <div class="container">
+
+    {{#data}}
+
+    <div class='users'>
+
+      <img src="{{avatar}}" />
+
+      <a href="/{{id}}"><h2>{{name}}</h2></a>
+
+      {{#company}}
+
+        <p>{{company}}</p>
+
+      {{/company}}
+
+      {{^company}}
+
+        <p>Available for hire!</p>
+
+      {{/company}}
+
+    </div>
+
+    {{/data}}
+
+    </div>
+
+
+
+  </body>
+</html>
